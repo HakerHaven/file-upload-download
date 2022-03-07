@@ -43,7 +43,7 @@ java -jar target/file-upload-download-0.0.1-SNAPSHOT.jar
 
 ---
 
-**5. 文件上传接口 **
+**5. 文件上传接口**
 
  POST请求
    1. 文件上传：http://localhost:9002/uploadFile
@@ -51,7 +51,9 @@ java -jar target/file-upload-download-0.0.1-SNAPSHOT.jar
  GET请求：
    1. 文件下载：json 返回值`fileDownloadUri`
 
-失败报文
+---
+
+**失败报文**
 
 ```json
 {
@@ -62,7 +64,7 @@ java -jar target/file-upload-download-0.0.1-SNAPSHOT.jar
 }
 ```
 
-成功报文
+**成功报文**
 
 ```json
 {
