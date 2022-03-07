@@ -18,7 +18,7 @@ file.upload-dir=/Users/callicoder/uploads
 
 **3. 使用 maven 运行应用程序**
 
-```bash
+```shell
 cd file-upload-download
 mvn spring-boot:run
 ```
@@ -27,7 +27,7 @@ mvn spring-boot:run
 
 您也可以将应用程序以 jar 的形式打包，然后像这样运行 jar 文件
 
-```bash
+```shell
 mvn clean package
 java -jar target/file-upload-download-0.0.1-SNAPSHOT.jar
 ```
@@ -37,7 +37,11 @@ java -jar target/file-upload-download-0.0.1-SNAPSHOT.jar
 1. 环境要求：JDK1.8
 2. application.properties配置文件里面设置自己需要的参数，路径最好使用绝对路径
 3. 启动命令
-   java -jar file-upload-download-0.0.1-SNAPSHOT.jar -Dspring-config.location=application.properties
+
+```shell
+java -jar file-upload-download-0.0.1-SNAPSHOT.jar -Dspring-config.location=application.properties
+```
+   
    带nohup日志启动
    nohup java -jar file-upload-download-0.0.1-SNAPSHOT.jar -Dspring-config.location=application.properties &
 
