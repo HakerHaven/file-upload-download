@@ -12,7 +12,7 @@ git clone https://github.com/HakerHaven/file-upload-download.git
 
 打开 `src/main/resources/application.properties` 文件 ，更改属性 `file.upload-dir` 确定文件上传的仓库位置.
 
-```
+```properties
 file.upload-dir=/Users/callicoder/uploads
 ```
 
@@ -41,9 +41,6 @@ java -jar target/file-upload-download-0.0.1-SNAPSHOT.jar
 ```shell
 java -jar file-upload-download-0.0.1-SNAPSHOT.jar -Dspring-config.location=application.properties
 ```
-   
-   带nohup日志启动
-   nohup java -jar file-upload-download-0.0.1-SNAPSHOT.jar -Dspring-config.location=application.properties &
 
 ---
 
