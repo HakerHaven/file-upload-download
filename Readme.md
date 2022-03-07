@@ -1,31 +1,31 @@
 ## Spring Boot 文件上传 / 下载 
 
-## Steps to Setup
+## 安装步骤
 
-**1. Clone the repository** 
+**1. 下载资源** 
 
 ```bash
 git clone https://github.com/HakerHaven/file-upload-download.git
 ```
 
-**2. Specify the file uploads directory**
+**2. 指定文件上传目录**
 
-Open `src/main/resources/application.properties` file and change the property `file.upload-dir` to the path where you want the uploaded files to be stored.
+打开 `src/main/resources/application.properties` 文件 ，更改属性 `file.upload-dir` 确定文件上传的仓库位置.
 
 ```
 file.upload-dir=/Users/callicoder/uploads
 ```
 
-**3. Run the app using maven**
+**3. 使用 maven 运行应用程序**
 
 ```bash
 cd file-upload-download
 mvn spring-boot:run
 ```
 
-That's it! The application can be accessed at `http://localhost:8080`.
+应用访问 `http://localhost:8080`.
 
-You may also package the application in the form of a jar and then run the jar file like so -
+您也可以将应用程序以 jar 的形式打包，然后像这样运行 jar 文件
 
 ```bash
 mvn clean package
@@ -43,9 +43,15 @@ java -jar target/file-upload-download-0.0.1-SNAPSHOT.jar
 
 ---
 
-**5. 文件上传接口 http://localhost:9002/uploadFile**
+**5. 文件上传接口 **
 
-报文示例，失败报文
+ POST请求
+   1. 文件上传：http://localhost:9002/uploadFile
+
+ GET请求：
+   1. 文件下载：json 返回值`fileDownloadUri`
+
+失败报文
 
 ```json
 {
