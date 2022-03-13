@@ -78,13 +78,3 @@ java -jar file-upload-download-0.0.1-SNAPSHOT.jar -Dspring-config.location=appli
 ```
 
 根据 status 判断是否上传成功，链接地址可以存入库，进行后续的访问下载
-
-git 分支 dev 和 master
-
-当前 dev 分支进行开发，中途转 master，先将代码提交
-
-test分支进行开发
-
-test 分支最后一个版本提交
-
-master继续进行开发
