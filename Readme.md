@@ -4,13 +4,13 @@
 
 **1. 下载资源** 
 
-```bash
+```shell
 git clone https://github.com/HakerHaven/file-upload-download.git
 ```
 
 **2. 指定文件上传目录**
 
-打开 `src/main/resources/application.properties` 文件 ，更改属性 `file.upload-dir` 确定文件上传的仓库位置.
+打开 `src/main/resources/application.properties` 文件 ，更改属性 `file.upload-dir` 确定文件上传的仓库位置。
 
 ```properties
 file.upload-dir=/Users/callicoder/uploads
@@ -35,7 +35,7 @@ java -jar target/file-upload-download-0.0.1-SNAPSHOT.jar
 **4. jar包启动后可以通过配置的端口进行页面访问测试文件上传与下载** 
 
 1. 环境要求：JDK1.8
-2. application.properties配置文件里面设置自己需要的参数，路径最好使用绝对路径
+2. application.properties 配置文件里面设置自己需要的参数，路径最好使用绝对路径
 3. 启动命令
 
 ```shell
@@ -77,4 +77,4 @@ java -jar file-upload-download-0.0.1-SNAPSHOT.jar -Dspring-config.location=appli
 }
 ```
 
-根据status判断是否上传成功，链接地址可以存入库，进行后续的访问下载
+根据 status 判断是否上传成功，链接地址可以存入库，进行后续的访问下载
